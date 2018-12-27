@@ -1,0 +1,534 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="author" content="liulei">
+  
+  
+  
+  
+    <meta name="description" content="为梦想，不休不止">
+  
+  <title>作品 [ Lynn Lau ]</title>
+  
+    <link rel="alternate" href="/atom.xml" title="Lynn Lau">
+  
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+      
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/works/works-style.css">
+      
+      
+     
+</head>
+
+<style>
+    * {
+        /*border: thin red solid;*/
+    }
+
+    header .bg-header {
+        height: 560px;
+        background-color: #62A4FF;
+    }
+
+    /*头像*/
+    .bg-header .avatar img {
+        border-radius: 50%;
+        margin-top: 100px;
+        max-width: 170px;
+    }
+
+    .bg-header h1,
+    .bg-header h2 {
+        color: white;
+    }
+
+    /*姓名*/
+    .bg-header h1 {
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px rgba(15, 15, 15, .3);
+    }
+
+    /*描述*/
+    .bg-header h2 {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    /*整个作品展示区*/
+    section .works-area {
+        margin-top: -150px;
+    }
+
+    .works-area .works-item {
+        border-radius: 2px;
+        border: 1px solid #eee8d5;
+        margin-bottom: 50px;
+        box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .works-item-img {
+        margin: auto -26px;
+    }
+
+    .works-item-img img {
+        width: 100%;
+    }
+
+    .works-area .works-item {
+        background: white;
+        padding: 5px 25px;
+    }
+
+    .works-area .footer {
+        padding-top: 10px;
+        border-top: thin #eee solid;
+    }
+
+    .works-area .footer .btn {
+        padding: 7px 9px;
+        border-radius: 2px;
+        float: right;
+        margin: 8px 0;
+        text-transform: none;
+        font-size: 12px;
+        font-style: italic;
+        background: #0085a1;
+        border: none;
+        color: #fff;
+    }
+
+    .works-item .works-content {
+        padding-top: 15px;
+    }
+
+    .works-item .title {
+        padding-top: 6px;
+    }
+
+    .works-item .title h3 {
+        display: inline-block;
+        margin: 0 15px 0 0;
+        height: 33px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .works-item .title .title-date {
+        float: right;
+        font-size: 18px;
+    }
+
+    .works-item .use span {
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 0 4px;
+        border: thin solid #795548;
+    }
+
+    .works-item .subtitle {
+        margin: 0;
+        font-size: 17px;
+    }
+
+    @media screen and (max-width: 400px) {
+        .works-item .footer .use {
+            font-size: 14px;
+        }
+
+        .works-item .works-item-img {
+            height: 200px;
+        }
+
+        .bg-header .avatar img {
+            max-width: 150px;
+        }
+
+        .bg-header h1 {
+            font-size: 24px;
+        }
+
+        section .works-area {
+            margin-top: -210px;
+        }
+    }
+</style>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top is-fixed" id="nav-top" data-ispost = "false" data-istags = "false" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Lynn Lau
+                </span>
+                's Works
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">                    
+                  <!--   
+                  
+                    
+                      <li><a href="/index.html">主页</a></li>
+                    
+                  
+                    
+                      <li><a href="/archives">文章</a></li>
+                    
+                  
+                    
+                      <li><a href="/works">作品</a></li>
+                    
+                  
+                    
+                      <li><a href="/about">关于</a></li>
+                    
+                  
+                    
+                      <li><a href="https://github.com/cqliulei">Github</a></li>
+                    
+                   -->
+                   <!--  <% site.pages.forEach(function(page){ %>
+                       <% if(page.title){ %>
+                       <li>
+                           <a href="<%= config.root %><%= page.path.replace('index.html', '') %>"><%= page.title %></a>
+                       </li>
+                       <% } %>
+                   <% }); %> -->
+                     <li><a href="/">返回首页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<div class="works-container" style="background-color: #fafafa">
+    <header>
+        <div class="bg-header text-center">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="http://img.cqliulei.com/assets/img/default_avatar.jpg">
+                </div>
+                <div class="personal-profile">
+                    <h1>
+                        Lynn Lau
+                    </h1>
+                    <h2>为梦想，不休不止</h2>
+                   
+                     
+                </div>
+            </div>
+        </div>
+    </header>
+     <div class="container">
+        <section class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 works-area">
+                
+                                      
+                    
+                      <div class="works-item">
+                         <div class="title">
+                             <h3>
+                                 [WAP]通盛创微贷
+                             </h3>
+                             <span class="title-date text-muted">
+                                 2016.02
+                             </span>
+                         </div>
+                        
+                         <div class="works-content">
+                             <div class="use text-warning"> 
+                                                             
+                                 <span>
+                                     html5
+                                </span> 
+                                                             
+                                 <span>
+                                     amazeui
+                                </span> 
+                                                             
+                                 <span>
+                                     swiper滑动
+                                </span> 
+                                                             
+                                 <span>
+                                     layer弹出
+                                </span> 
+                                                              
+                             </div>
+                             　
+                             <p class="subtitle"> 前端开发：通盛创微贷手机WAP网站开发 </p>
+                     
+                             <p class="text-muted"> 由于是手机wap网站，所以只针对手机，第一时间就想到了移动优先的跨屏响应式框架bootstrap和amazeui, 在两者之间犹豫了一下，最终，选择了amazeui,项目里面比较重要和复杂的是贷款申请验证以及交互， 因为用了响应式框架，一切都变得简单起来，不过由于当时项目时间紧急，故没有做到前后端完全分离， 还有待于进一步完善…  </p>
+                         </div>
+                         <div class="footer clearfix">
+                             <a class=" btn btn-default" href="http://m.tosenscredit.com" target="_blank"> Open it</a>
+                         </div>
+                      </div>             
+                  
+                      <div class="works-item">
+                         <div class="title">
+                             <h3>
+                                 [PC]通盛创微贷
+                             </h3>
+                             <span class="title-date text-muted">
+                                 2015.08
+                             </span>
+                         </div>
+                        
+                         <div class="works-content">
+                             <div class="use text-warning"> 
+                                                             
+                                 <span>
+                                     requireJS
+                                </span> 
+                                                             
+                                 <span>
+                                     html5
+                                </span> 
+                                                             
+                                 <span>
+                                     normalize
+                                </span> 
+                                                             
+                                 <span>
+                                     modernizr
+                                </span> 
+                                                             
+                                 <span>
+                                     swiper滑动
+                                </span> 
+                                                              
+                             </div>
+                             　
+                             <p class="subtitle"> 前端开发：通盛创微贷官网开发 </p>
+                     
+                             <p class="text-muted"> 根据产品需求和设计对公司官网进行二次开发(不想吐槽之前网站被拿出去外包), 我主要负责前端界面开发和ajax交互的实现；在前端开发之前以确定网站以标准浏览器为主， 故最初就放弃了万恶的ie6，ie7&ie8界面展示效果会次一些，但完全能正常使用； 前端使用了requirejs进行模块化加载js以及运用swiper插件进行滑动，网站总体中规中矩， 后期会考虑尝试前后端完全分离… </p>
+                         </div>
+                         <div class="footer clearfix">
+                             <a class=" btn btn-default" href="http://www.tosenscredit.com" target="_blank"> Open it</a>
+                         </div>
+                      </div>             
+                  
+                      <div class="works-item">
+                         <div class="title">
+                             <h3>
+                                 [PC&&WAP]茶语网
+                             </h3>
+                             <span class="title-date text-muted">
+                                 2014.10
+                             </span>
+                         </div>
+                         
+                         <div class="works-item-img">
+                             <img src="http://img.cqliulei.com/assets/img/cy.jpg">
+                         </div>
+                         
+                         <div class="works-content">
+                             <div class="use text-warning"> 
+                                                             
+                                 <span>
+                                     html
+                                </span> 
+                                                             
+                                 <span>
+                                     jquery
+                                </span> 
+                                                             
+                                 <span>
+                                     swiper滑动
+                                </span> 
+                                                             
+                                 <span>
+                                     layer弹出
+                                </span> 
+                                                              
+                             </div>
+                             　
+                             <p class="subtitle"> 前端开发：通盛创微贷官网,以及手机WAP网站开发 </p>
+                     
+                             <p class="text-muted"> 由于该项目是一个综合性电子商务网站，涉及功能、版块众多，以及专题页面的灵活多变， 所以基本上是运用前端基础知识进行按部就班的开发。（ps：由于时间紧，工作量大， 不得不提高开发效率的同时加班加点埋头苦干…） </p>
+                         </div>
+                         <div class="footer clearfix">
+                             <a class=" btn btn-default" href="http://m.chayu.com/" target="_blank"> Open it</a>
+                         </div>
+                      </div>             
+                  
+                      <div class="works-item">
+                         <div class="title">
+                             <h3>
+                                 [PC]陈升普洱官网
+                             </h3>
+                             <span class="title-date text-muted">
+                                 2014.05
+                             </span>
+                         </div>
+                         
+                         <div class="works-item-img">
+                             <img src="http://img.cqliulei.com/assets/img/cspuer.jpg">
+                         </div>
+                         
+                         <div class="works-content">
+                             <div class="use text-warning"> 
+                                                             
+                                 <span>
+                                     html
+                                </span> 
+                                                             
+                                 <span>
+                                     jquery
+                                </span> 
+                                                             
+                                 <span>
+                                     layer弹出
+                                </span> 
+                                                              
+                             </div>
+                             　
+                             <p class="subtitle"> 前端开发：陈升普洱PC官网 </p>
+                     
+                             <p class="text-muted"> 项目没有特别说明之处，就是运用html，css,jquery等前端基础以及PS进行切片… </p>
+                         </div>
+                         <div class="footer clearfix">
+                             <a class=" btn btn-default" href="http://www.cspuer.com/" target="_blank"> Open it</a>
+                         </div>
+                      </div>             
+                  
+                
+
+
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>              
+                <p class="copyright text-muted">
+                     Site by liulei using
+				      <a href="http://hexo.io">Hexo</a>
+				      <br>
+				      
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
+
+  <script>
+if(isTriggerAnalytics) {
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?076c9e7a9827d49ee5fbd569590ecf65";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
+</script>
+
+
+  <script>
+if(isTriggerAnalytics) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84926965-1', 'auto');
+  ga('send', 'pageview');
+}
+
+</script>
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84926965-1', 'auto');
+  ga('send', 'pageview');
+
+</script> -->

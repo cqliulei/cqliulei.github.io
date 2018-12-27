@@ -1,0 +1,380 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="author" content="liulei">
+  
+  
+  
+  
+    <meta name="description" content="我现在是一名Web前端开发工程师（不！更确切地说应该是web前端开发者，web front end devolper,离engineer还有一定差距，不过我正在向engineer拼命奔进，但是engineer不是我的终点，我的终极目标是向前端架构师发展，这还有很长一段路需要走，不过，我会像网站提到的那样：“为梦想不休不止…”）
+
+目前我混迹在互联网金融行业，技术方面主要是Web前端开发，后端...">
+  
+  <title>关于 [ Lynn Lau ]</title>
+  
+    <link rel="alternate" href="/atom.xml" title="Lynn Lau">
+  
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+    
+      <link rel="stylesheet" href="/css/random.css">
+<link rel="stylesheet" href="/css/vegas.min.css">
+<link rel="stylesheet" href="/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
+<link rel="stylesheet" href="/css/layout.css">
+    
+     
+</head>
+
+<body>
+<div class="side-navigate hide-area">
+  
+  
+</div>
+<div id="outer-container" class="hide-area">
+<div id="container">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
+        
+        <a onClick="openUserCard()">
+          <img id="avatar" src="http://img.cqliulei.com/assets/img/logo_avatar.jpg"/>
+          <div id="homelink">Lynn Lau</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
+        
+        
+          
+            <li>
+          
+            <a href="/index.html">主页</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/archives">文章</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/works">作品</a>
+            
+          </li>
+        
+          
+            <li class="active">
+          
+            <a href="/about">关于</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/cqliulei">Github</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article id="page">
+    
+    
+      <h1 class="">关于</h1>
+      
+      <blockquote>
+<p>我现在是一名Web前端开发工程师（不！更确切地说应该是web前端开发者，web front end devolper,离engineer还有一定差距，不过我正在向engineer拼命奔进，但是engineer不是我的终点，我的终极目标是向前端架构师发展，这还有很长一段路需要走，不过，我会像网站提到的那样：“为梦想不休不止…”）</p>
+</blockquote>
+<p>目前我混迹在互联网金融行业，技术方面主要是Web前端开发，后端粗略了解一些，不是很熟；设计没有太多的灵感，就是会玩一下PS。除了技术，业余生活包括看看电影，追追美剧、图书馆看看书、KTV高吼几曲和三朋四友爬爬山。你可以通过以下方式了解我：</p>
+<ul>
+<li>代码托管：<a href="https://github.com/cqliulei" target="_blank" rel="noopener">Github</a></li>
+<li>喜欢的电影类型：美剧 科幻 动作 战争等</li>
+<li>喜欢的歌曲类型：旋律节奏优美的歌 中国风 励志歌曲</li>
+<li>社交网络: QQ、<a href="http://weibo.com/u/1632162353" target="_blank" rel="noopener">微博</a>、微信公众号（cqliulei）</li>
+<li>喜欢的书籍类型：技术类、哲学、心理学以及跟养生相关的书籍等</li>
+<li>Email: <a href="mailto:real_life@qq.com" target="_blank" rel="noopener">real_life@qq.com</a></li>
+</ul>
+<p>特别喜欢的书籍：</p>
+<ul>
+<li>《活在当下》 [美] 芭芭拉·安吉丽思</li>
+<li>《不抱怨的世界》  [美] 芭芭拉·安吉丽思</li>
+<li>《自卑与超越》 阿尔弗雷德·阿德勒</li>
+<li>《女心理师》毕淑敏</li>
+<li>《生命的重建》[美] 露易丝·海</li>
+</ul>
+
+    
+  </article>
+
+  
+<nav id="pagination">
+  
+
+  
+
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+      
+      
+      
+    </div>
+  </div>
+
+  <!-- 评论-->
+  
+    <!--引入 Gitment -->
+<div id="gitment-container"></div>
+<link  rel="stylesheet" href="/js/gitment/gitment.css">
+<script src="/js/gitment/gitment.js"> </script>
+<script type="text/javascript">
+    var myTheme = {
+      render(state, instance) {
+        var container = document.createElement('div')
+        container.lang = "en-US"
+        container.className = 'gitment-container gitment-root-container'
+        container.appendChild(instance.renderHeader(state, instance))
+        container.appendChild(instance.renderEditor(state, instance))
+        container.appendChild(instance.renderComments(state, instance))
+        container.appendChild(instance.renderFooter(state, instance))
+        return container
+      },
+    }
+    var gitment = new Gitment({
+      id: location.href, // 可选。默认为 location.href
+      owner: 'cqliulei',
+      repo: 'blog_Gitment',
+      oauth: {
+        client_id: 'd63e22e42890f5cc3a5b',
+        client_secret: '90cabbe06b89b26a21540c54cd5837d87961e65b',
+      },
+      theme: myTheme
+    })
+    gitment.render('gitment-container')
+</script>
+<!-- 引入 Gitment end -->
+  
+
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by liulei using
+      <a href="http://hexo.io">Hexo</a>
+      <br>
+      
+    </div>
+  </div>
+ 
+</div>
+</div>
+
+
+
+
+
+<div id="user-card">
+  <div class="center-field">
+    <img class="avatar" src="http://img.cqliulei.com/assets/img/logo_avatar.jpg">
+    <p id="description">为梦想，不休不止</p>
+    <ul class="social-icon">
+  
+  
+    <li>
+      <a href="https://github.com/cqliulei">
+        
+          <i class="icon iconfont github">&#xe606;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://weibo.com/1632162353">
+        
+          <i class="icon iconfont weibo">&#xe602;</i>
+        
+      </a>
+    </li>
+  
+</ul>
+  </div>
+</div>
+
+
+<div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
+
+  <script>
+if(isTriggerAnalytics) {
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?076c9e7a9827d49ee5fbd569590ecf65";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
+</script>
+
+
+  <script>
+if(isTriggerAnalytics) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84926965-1', 'auto');
+  ga('send', 'pageview');
+}
+
+</script>
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84926965-1', 'auto');
+  ga('send', 'pageview');
+
+</script> -->
+
+
+
+  
+  
+    <script src="/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/js/vegas.min.js"></script>
+  
+    <script src="/js/random.js"></script>
+  
+    <script src="/js/highlight.pack.js"></script>
+  
+    <script src="/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
+
+<script>
+
+  // fancybox
+  var backgroundImages = [];
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+  });
+  $(".fancybox").fancybox();
+
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+
+var backgroundColor = "f4f5f5";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
+</body>
+</html>
+
