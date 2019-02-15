@@ -10,7 +10,7 @@
 }
 
 .post-show-content p {
-    margin: 0 0 25px
+    margin: 0 0 5px
 }
 
 .post-show-content blockquote h1:last-child,
@@ -240,7 +240,7 @@
     border-radius: 3px;
     overflow: auto;
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
 }
 .post-show-content .highlight table{
     border: none;
